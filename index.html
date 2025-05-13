@@ -1,140 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-      <title>介绍 | OpenHarmony.NET </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="介绍 | OpenHarmony.NET ">
-      
-      
-      <link rel="icon" href="images/logo.png">
-      <link rel="stylesheet" href="public/docfx.min.css">
-      <link rel="stylesheet" href="public/main.css">
-      <meta name="docfx:navrel" content="toc.html">
-      <meta name="docfx:tocrel" content="docs/toc.html">
-      
-      <meta name="docfx:rel" content="">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/OpenHarmony-NET/docs/blob/main/index.md/#L1">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./public/docfx.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>OpenHarmony.NET</title>
+  <meta name="title" content="OpenHarmony.NET">
+  <link rel="shortcut icon" href="images/logo.png">
 
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
+  <script>
+    location.href = "/docs/"
+  </script>
+</head>
 
-  </head>
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="images/logo.png" alt="OpenHarmony.NET">
-            OpenHarmony.NET
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
-        </div>
-
-        <article data-uid="">
-
-<p><img src="images/Header.png" alt="OpenHarmony.NET" title="Hello OpenHarmony.NET"></p>
-<h1 id="介绍">介绍</h1>
-<h2 id="openharmonynet-是什么">🤔OpenHarmony.NET 是什么？</h2>
-<p>OpenHarmony.NET 是一套专为 <strong>OpenHarmony</strong>（包括 <strong>HarmonyOS Next</strong>）设计的解决方案，旨在支持 <strong>.NET</strong> 应用在鸿蒙系统上运行。借助 OpenHarmony.NET，开发者可以使用熟悉的 <strong>Avalonia</strong> 或 <strong>Blazor Hybrid</strong> 技术开发鸿蒙应用，甚至可以用 <strong>C#</strong> 代替 <strong>C++</strong> 进行原生库的开发。这为.NET开发者提供了一个全新的平台，使他们能够轻松地将.NET技术栈引入鸿蒙生态。</p>
-<h2 id="运行时支持">😲运行时支持</h2>
-<h3 id="-适配情况">· 适配情况</h3>
-<p>OpenHarmony.NET 已成功适配 <strong>.NET 9</strong>，为开发者提供了稳定且高效的运行环境。</p>
-<h3 id="-运行时限制">· 运行时限制</h3>
-<ol>
-<li><p><strong>仅NativeAOT可用</strong>：
-由于鸿蒙系统对运行时生成汇编代码的限制（详情见 <a href="https://developer.huawei.com/consumer/cn/doc/harmonyos-releases-V5/changelogs-for-all-apps-b031-V5#%E5%8C%BF%E5%90%8D%E5%86%85%E5%AD%98%E6%89%A7%E8%A1%8C%E6%9D%83%E9%99%90%E7%AE%A1%E6%8E%A7%E7%AD%96%E7%95%A5%E5%8F%98%E6%9B%B4%E8%AF%B4%E6%98%8E">鸿蒙系统变更说明</a>），JIT（Just-In-Time）技术无法使用。因此，OpenHarmony.NET 采用了 <strong>NativeAOT（Native Ahead-Of-Time）</strong> 编译方式。这种方式在编译阶段直接生成原生机器码，从而确保应用在鸿蒙系统上的高效运行。</p>
-</li>
-<li><p><strong>无法使用<code>Marshal.GetDelegateForFunctionPointer</code>相关函数</strong>：
-原因同上，推荐直接使用函数指针。</p>
-</li>
-</ol>
-<h2 id="框架适配">🥰框架适配</h2>
-<h3 id="-已支持的框架">· 已支持的框架</h3>
-<p>目前，OpenHarmony.NET 已成功适配以下两个框架：</p>
-<ol>
-<li><strong>Avalonia</strong>：一个跨平台的 UI 框架，支持使用 XAML 和 C# 开发桌面应用。详情请参阅 <a href="docs/avalonia/introduction.html">Avalonia 文档</a>。</li>
-<li><strong>Blazor Hybrid</strong>：一个基于 Blazor 的混合开发框架，允许使用 C# 和 Razor 语法开发跨平台应用。详情请参阅 <a href="docs/blazor-hybrid/introduction.html">Blazor Hybrid 文档</a>。</li>
-</ol>
-<h3 id="-更多框架适配">· 更多框架适配</h3>
-<p>我们欢迎更多 .NET 框架加入 OpenHarmony.NET 生态。如果您有意向适配其他框架，我们愿意分享在适配 Avalonia 和 Blazor Hybrid 过程中积累的宝贵经验，帮助您快速上手。</p>
-
-</article>
-
-        <div class="contribution d-print-none">
-          <a href="https://github.com/OpenHarmony-NET/docs/blob/main/index.md/#L1" class="edit-link">Edit this page</a>
-        </div>
-
-        <div class="next-article d-print-none border-top" id="nextArticle"></div>
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
